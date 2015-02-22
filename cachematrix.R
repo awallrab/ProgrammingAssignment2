@@ -1,4 +1,4 @@
-##################################################################################
+################################################################################
 ## The R script contains two functions to effectively cache the inversion
 ## of a matrix.
 ## - makeCacheMatrix()
@@ -10,7 +10,7 @@
 ## cache. All subsequent calls to cacheSolve() will return the result from the
 ## cache.
 
-##################################################################################
+################################################################################
 # The function makeCacheMatrix() creates a function vector to
 # - set & get the working matrix
 # - set & get the cached inverse of the matrix
@@ -46,7 +46,7 @@ makeCacheMatrix <- function(M = matrix()) {
        getSolved = getSolved)
 }
 
-##################################################################################
+################################################################################
 # The function cacheSolve() takes the vector returned by makeCacheMatrix()
 # as an input and returns the inverse of the contained matrix
 cacheSolve <- function(M, ...) {
